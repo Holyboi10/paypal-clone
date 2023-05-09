@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    font-size: 14px;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+#navBar{
+    /* border: 1px solid blue; */
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+    margin-top: 20px;
+}
+.logo{
+    /* border: 1px solid red; */
+    width: 25%;
+    margin-top: -20px;
+    margin-left: 40px;
+
+}
+#logo{
+    width: 200px;
+    height: 80px;
+}
+.menu-wrap{
+    /* border: 1px solid yellow; */
+    width: 30%;
+}
+.login{
+    /* border: 1px solid yellowgreen; */
+    width: 30%;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.login button{
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+}
+.menu, .drop-menu {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+#PayPal-Ad{
+    /* border: 1px solid red; */
+    padding-top: 30px;
+
+}
+
+.menu-item {
+    display: inline-block;
+    /* background-color: #4285f4; */
+    color: black;
+    position: relative;
+    /* border: 1px solid red; */
+    margin-left: 70px;
+}
+#sect{
+    /* border: 1px solid red; */
+    width: 170px;
+    height: 30px;
+    color: #555;
+    border: none;
+}
+.menu-item a {
+    text-decoration: none;
+    padding: 6px 10px;
+    color: black;
+    display: block;
+}
+
+.drop-menu {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 100px;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.drop-menu-item {
+    width: 100%;
+}
+
+.drop-menu-item:hover {
+    background-color: #eee;
+}
+
+.drop-menu-item a {
+    color: #555;
+}
+
+.menu-item:hover .drop-menu {
+    display: block;
+}
+#hero{
+    /* border: 1px solid green; */
+    height: 70vh;
+    text-align: center;
+    background-image: url(paya.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 16px;
+    color: black;
+
+}
+#hero a{
+    color: white;
+    text-decoration: none;
+}
+#hero a:hover{
+    text-decoration: underline;
+    text-decoration-color: white;
+}
+#PayPal-Ad{
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 60vh;
+}
+#open{
+    /* border: 1px solid red; */
+    padding-top: 15%;
+}
+#image{
+    /* border: 1px solid yellowgreen; */
+    width: 350px;
+    height: 250px;
+}
+
+#paypal-promo{
+    /* border: 1px solid red; */
+    margin: auto;
+    text-align: center;
+    height: 90vh;
+    width: 90%;
+}
+#blogs{
+    display: flex;
+    /* border: 1px solid green; */
+    justify-content: space-evenly;
+    margin: auto;
+    height: 50vh;
+    text-align: start;
+}
+.simpler{
+    display: flex;
+    justify-content: space-evenly;
+}
+#last{
+    /* border: 1px solid blue; */
+    text-align: center;
+    height: 50vh;
+    background-color: rgb(7, 7, 134);
+    color: white;
+    /* font-size: 16px; */
+    font-weight: lighter;
+    padding-top: 30px;
+
+}
+#last a{
+    color: white;
+}
+#last-fit{
+    /* border: 1px solid green; */
+    height: 80%;
+    text-align: start;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-top: 30px;
+}
+#ghana{
+    /* border: 1px solid red; */
+    height: 30vh;
+    margin: auto;
+    text-align: center;
+    font-size: 18px;
+}
+
+@media (max-width:768px) {
+    #blogs{
+        /* border: 1px solid red; */
+        flex-direction: column;
+        /* height: 300vh; */
+        margin-top: 100px;
+    }
+    #PayPal-Ad{
+        /* border: 1px solid red; */
+        padding-top: 30px;
+
+    }
+    #open{
+        /* border: 1px solid red; */
+        padding: 80px;
+        padding-top: 180px;
+    }
+    .menu-wrap{
+        display: none;
+    }
+    .login{
+        /* border: 1px solid red; */
+        display: flex;
+        width: 90vw;
+        margin-left: -80px;
+    }
+    .logo{
+        align-items: flex-start;
+        /* border: 1px solid green; */
+        
+    }
+    #navBar{
+        /* border: 1px solid rebeccapurple; */
+        justify-content: space-evenly;
+    }
+    #paypal-promo{
+        /* border: 1px solid blue; */
+        height: 150vh;
+        justify-content: center;
+        margin-top: 100px;
+    }
+    #blogs{
+        display: flex;
+        flex-direction: column;
+        /* border: 1px solid green; */
+        height: 100%;
+    }
+    #ghana{
+        /* margin-top: 290px; */
+    }
+    #last{
+        /* border: 1px solid green; */
+        margin-top: 400px;
+        height: 90vh;
+        padding-top: 30px;
+    }
+    #last-fit{
+        /* border: 1px solid red; */
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
+
+    }
+    #open h2{
+        color: whitesmoke;
+    }
+}
